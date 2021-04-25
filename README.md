@@ -9,7 +9,9 @@ Limited to my English proficiency, most of the English part comes from Google Tr
 When NSX-T uses NCP to integrate with K8s, you need to tag each VM Node virtual interface to identify which node and which cluster the container traffic comes from. This script is to help you tag VM Node VIFs in batches.
 
 ## 图示 / Diagram
-
+![](https://i.imgur.com/Oi49Lgl.png)
+<br>
+<br>
 ## 限制条件 / Limitation
 1. 适用于初次部署使用<br>Suitable for greenfield deployment
 2. 确保Node Vif所在的Segment中没有其他无关的接口, 否则脚本未包含处理该错误的逻辑<br>Make sure that there are no other irrelevant interfaces in the segment where Node Vif is located, otherwise the script does not contain the logic to handle the error
